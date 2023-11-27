@@ -1,38 +1,144 @@
 .App {
   text-align: center;
+  background: snow;
+  height: 100vh;
+}
+.btn {
+  height: 5vh;
+  width: 60%;
+  background: plum;
+  border: 1px solid plum;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.footer {
+  margin: 30% 0 0 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* CSS for Product List */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 20vw);
+  grid-gap: 1% 3%;
+  grid-template-rows: 100%;
+}
+.cards1 {
+  display: grid;
+  grid-template-columns: repeat(4, 20vw);
+  grid-gap: 1% 3%;
+  grid-template-rows: 50%;
+}
+.cards2 {
+  display: grid;
+  grid-template-columns: repeat(4, 20vw);
+  grid-gap: 1% 3%;
+  grid-template-rows: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* CSS for Productcard */
+.mainCard {
+  height: 90%;
+  transition: transform 0.3s;
+}
+.mainCard:hover {
+  transform: scale(1.1);
+}
+/* Home component */
+
+.homeCard {
+  padding: "10% 5% 2% 5%";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* ProductDetails */
+.details {
+  margin-top: 8%;
+}
+
+.detailsCard {
+  padding: 0 4%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* Cart */
+
+.cartMain {
+  margin: 15% 0 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 800px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    grid-gap: 1% 3%;
+    grid-template-rows: 50%;
   }
-  to {
-    transform: rotate(360deg);
+  .cards1 {
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    grid-gap: 1% 3%;
+    grid-template-rows: 50%;
+  }
+  .cards2 {
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    grid-gap: 1% 3%;
+    grid-template-rows: 50%;
+  }
+  .homeCard {
+    padding: "10% 3% 2% 3%";
+  }
+  .details {
+    margin-top: 20%;
+  }
+  .footer {
+    margin: 60% 0 0 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 45vw);
+    grid-gap: 1% 3%;
+    grid-template-rows: 50%;
+  }
+  .cards1 {
+    display: grid;
+    grid-template-columns: repeat(2, 45vw);
+    grid-gap: 2% 3%;
+    grid-template-rows: 30%;
+  }
+  .cards2 {
+    display: grid;
+    grid-template-columns: repeat(2, 45vw);
+    grid-gap: 2% 3%;
+    grid-template-rows: 30%;
+  }
+  .mainCard {
+    height: 100%;
+  }
+  .carousel {
+    max-width: 100%;
+  }
+  .details {
+    margin-top: 25%;
+  }
+  .detailsCard {
+    padding: 0 4%;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: repeat(2, 50%);
+    justify-content: center;
+    align-items: center;
+  }
+  .cartMain {
+    margin: 30% 0 0 0;
+  }
+  .footer {
+    margin: 90% 0 0 0;
   }
 }
