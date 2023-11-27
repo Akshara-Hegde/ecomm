@@ -60,7 +60,7 @@ const ProductDetails = () => {
           <button
             style={{
               border: "1px solid plum",
-              background: "plum",
+              background: "salmon",
               margin: "5%",
               width: "50%",
             }}
