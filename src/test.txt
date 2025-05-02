@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+djfvsdfvsdfkjnvdfvsdfv
+dfvndfvnjjkdfv
+nldsmclks
+dfvfd vnsdfvjdsfov
+=======
 aidjnjacndjdsjkcnadc
 asdcnkjdnscjds
 sdjnkjdnsc
+>>>>>>> test
